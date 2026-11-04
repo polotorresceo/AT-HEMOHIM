@@ -18,7 +18,8 @@ h1,h2{color:var(--rojo);font-weight:800;letter-spacing:-.02em;line-height:1.12;m
 h3{margin:0 0 8px;font-size:20px;color:var(--tx)}
 
 .top{padding:18px 20px;border-bottom:1px solid var(--borde)}
-.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.top .wrap .mini+.mini{margin-left:-4px}
 .logo{font-weight:800;color:var(--rojo);text-decoration:none;font-size:18px}
 .top a.mini{font-weight:600;text-decoration:none;color:var(--tx)}
 .top a.mini:hover{color:var(--rojo)}
@@ -48,24 +49,6 @@ cite{display:block;margin-top:14px;font-style:normal;font-weight:700;color:var(-
 .cta .btn:hover{background:#111;color:#FFFFFF}
 
 footer{background:#111;color:#FFFFFF;text-align:center;padding:28px 20px;font-size:14px}
-footer a{color:#FFFFFF}
-
-@media (max-width:760px){
- .hero{padding:56px 18px 48px}
- section,.cta{padding:48px 18px}
- .grid{grid-template-columns:1fr}
- .btn{width:100%;padding:16px 24px;font-size:16px}
-}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
-</style>
-</head>
-<body>
-
-<header class="top">
-  <div class="wrap">
-    <a class="logo" href="#inicio">Atomy HIM Antienvejecimiento</a>
-    <a class="mini" href="http://atomy-hipertension.blogspot.com/">Ir al blog</a>
-  </div>
 </header>
 
 <main id="inicio">
@@ -78,6 +61,28 @@ footer a{color:#FFFFFF}
       <span class="note">Información clara, sin compromiso</span>
     </div>
   </div>
+
+  <section id="entradas">
+    <div class="wrap">
+      <h2>Videos y entradas</h2>
+      <p class="sub">Mira el video y solicita tu consulta sin costo.</p>
+      <div class="entradas">
+
+        <!-- ===== ENTRADA: copia desde aquí hasta "FIN ENTRADA" para agregar otra ===== -->
+        <article class="entrada">
+          <div class="entrada-head">
+            <h3>Hemohim: conoce los productos de HIM</h3>
+            <span class="fecha">Video informativo</span>
+          </div>
+          <div class="video">
+            <iframe 
+        </article>
+        <!-- ===== FIN ENTRADA ===== -->
+        <!-- Nota: en una segunda entrada cambia los id/for (name, whatsapp) por otros únicos, p. ej. name2 y whatsapp2 -->
+
+      </div>
+    </div>
+  </section>
 
   <section class="alt" id="beneficios">
     <div class="wrap">
